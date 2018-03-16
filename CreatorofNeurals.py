@@ -5,21 +5,21 @@ class Creator:
     import numpy as np
     
     
-    def __init__(self, a, inp):
+    def __init__(self, layerData, inputs):
         self.la = []
         self.wl = []
         self.bl = []
         c = 0
-        for v in a:
+        for v in layerData:
             try:
                 self.la.append(self.np.asmatrix(self.np.zeros(v).reshape(v, 1)))
-                self.wl.append(self.rmat(a[c + 1], v))
-                self.bl.append(self.rmat(a[c + 1], 1))
+                self.wl.append(self.rmat(layerdata[c + 1], v))
+                self.bl.append(self.rmat(layerData[c + 1], 1))
                 c += 1
             except IndexError:
                 pass
         del v, c
-        self.ip(inp)
+        self.ip(inputs)
         
     def ip(self, inpu):
         c2 = 0
