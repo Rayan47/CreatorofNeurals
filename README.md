@@ -3,6 +3,7 @@ Creates instances of simple neural networks based on the parameters provided.
 Parameters are: 
 
 >Layer data in the form of a list 
+
 >Input layer in the form of a list
 
 
